@@ -2,7 +2,7 @@
   grid-row: 1/2;
   grid-column: 2/3;
   width: 700px;
-  height: 550px;
+  height: 600px;
   background-color: $color-halloween-white;
   justify-self: center;
   align-self: center;
@@ -25,7 +25,6 @@
     justify-content: center;
     width: 450px;
     height: 420px;
-    grid-row: 2/3;
     text-align: center;
   }
   @media only screen and (max-width: $bp-smallest) {
@@ -76,6 +75,7 @@
   &__text p {
     font-size: 2rem;
     line-height: 2.8rem;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: $bp-small) {
       font-size: 1.6rem;
@@ -85,7 +85,6 @@
 
   &__choices {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -95,14 +94,18 @@
   }
   &__set {
     background-color: $color-halloween-orange;
-    height: 30px;
-    width: 50px;
+    height: 40px;
+    width: 70px;
     border-radius: 8px;
-    margin: 1rem 0;
+    margin: 1rem 2rem;
     color: $color-halloween-white;
     text-transform: uppercase;
     border: none;
     box-shadow: $box-shadow-large;
+
+    @media only screen and (max-width: $bp-small){
+      padding: 0 1rem;
+    }
 
     &:hover {
       transform: scale(1.1);
