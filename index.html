@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A fun, free Halloween game of memory matching for learning English online or in the classroom">
-    <meta name="keywords" content="Halloween online flashcards">
-    <title>Halloween Card Memory Matching</title>
+    <meta name="description" content="A creepy game of bingo for students and young learners of English based on halloween vocabulary with printable bingo cards.">
+    <meta name="keywords" content="Halloween printable bingo class games">
+    <title>Halloween ESL Vocabulary Bingo</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
@@ -36,7 +36,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-          <span class="nav-bar__title-page-main" id="pageTitle">HALLOWEEN MEMORY MATCH</span>
+          <span class="nav-bar__title-page-main" id="pageTitle">HALLOWEEN BINGO</span>
       </div>
       <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -57,23 +57,21 @@
 
         <div class="introduction">
           <div class="introduction__img" id="ghostly" onclick="ghostify();">
-            <img src="img/ghosties.png" alt="decorative">
+            <img src="img/funpic1.png" alt="decorative">
           </div>
           <div class="introduction__text">
-            <h1>Troublesome Tombstones
+            <h1>Jeepers Creepers!
             </h1>
             <p>
-              Match the Halloween items hiding behind each of the troublesome tombstones with its name for some spooky fun. There are three sets to choose from!
+              Printout cards for a game of class Halloween bingo — six cards are generated each time and we often give students two or three cards each. Use the accompanying bingo caller to randomly choose from the list of words: <span style="font-weight: bolder;">bat, bone, broomstick, candles, candy, cat, cauldron, clown, coffin, death, fancy-dress, fangs, frankenstein, ghost, grave, halloween, hat, monster, moon, mummy, pirate, pumpkin, skeleton, skull, spell, spider, vampire, wand, web, werewolf, witch, wizard, zombie.</span> 
+
             </p>
              <div class="introduction__choices">
-    <button class="introduction__set" id="set1">Set 1</button>
-    <p>bat, bone, broom, werewolf, candy, cat, cauldron, clown</p>
+    <button class="introduction__set newCards" onclick="getNewCards();">NEW CARDS</button>
 
-    <button class="introduction__set" id="set2">Set 2</button>
-    <p>coffin, witch, fangs, Frank, ghost, grave, hat, monster </p>
+    <a href="bingo-caller-halloween.html"><button class="introduction__set newCards">BINGO CALLER</button></a>
+    <button class="introduction__set newCards" onclick="window.print();">PRINT CARDS</button>
 
-    <button class="introduction__set" id="set3">Set 3</button>
-    <p>zombie, mummy, pirate, pumpkin, skeleton, skull, spider, vampire</p>
 
   </div>
   </div
@@ -81,25 +79,112 @@
           </div>
         </div>
 
+        <div class="container" id="container">
+       
+            <div class="bingo_card printMe" id="bingoCard">
+              <img src="img/bingoCARD.jpg" class="card-class" alt="">
+              <div id="id1" class="grid-item"></div>
+              <div id="id2" class="grid-item"></div>
+              <div id="id3" class="grid-item"></div>
+              <div id="id4" class="grid-item"></div>
+              <div id="id5" class="grid-item"></div>
+              <div id="id6" class="grid-item"></div>
+              <div id="id7" class="grid-item"></div>
+              <div id="id8" class="grid-item"></div>
+              <div id="id9" class="grid-item"></div>
+              <div id="id10" class="grid-item"></div>
+              <div id="id11" class="grid-item"></div>
+              <div id="id12" class="grid-item"></div>
+            </div>
+  
+            <div class="bingo_card1 printMe" id="bingoCard1">     
+              <img src="img/bingoCARD.jpg" class="card-class" alt="">
+         
+              <div id="id13" class="grid-item"></div>
+              <div id="id14" class="grid-item"></div>
+              <div id="id15" class="grid-item"></div>
+              <div id="id16" class="grid-item"></div>
+              <div id="id17" class="grid-item"></div>
+              <div id="id18" class="grid-item"></div>
+              <div id="id19" class="grid-item"></div>
+              <div id="id20" class="grid-item"></div>
+              <div id="id21" class="grid-item"></div>
+              <div id="id22" class="grid-item"></div>
+              <div id="id23" class="grid-item"></div>
+              <div id="id24" class="grid-item"></div>
+            </div>
       
-        <div class="game-container"> 
-    <div class="empty"></div>
-    <div class="h4 letter1">A</div>
-    <div class="h4 letter2">B</div>
-    <div class="h4 letter3">C</div>
-    <div class="h4 letter4">D</div>
-    <div class="empty"></div>
-    <div class="h4 number1">I</div>
-    <div class="h4 number2">II</div>
-    <div class="h4 number3">III</div>
-    <div class="h4 number4">IV</div>
-
-    <div class="game-tiles game-tiles1 showTiles" id="game-tiles"></div>
-
-
-
-
-  </div>
+            <div class="bingo_card2 printMe" id="bingoCard2">
+              <img src="img/bingoCARD.jpg" class="card-class" alt="">
+              
+              <div id="id13" class="grid-item"></div>
+              <div id="id25" class="grid-item"></div>
+              <div id="id26" class="grid-item"></div>
+              <div id="id27" class="grid-item"></div>
+              <div id="id28" class="grid-item"></div>
+              <div id="id29" class="grid-item"></div>
+              <div id="id30" class="grid-item"></div>
+              <div id="id31" class="grid-item"></div>
+              <div id="id32" class="grid-item"></div>
+              <div id="id33" class="grid-item"></div>
+              <div id="id34" class="grid-item"></div>
+              <div id="id35" class="grid-item"></div>
+              <div id="id36" class="grid-item"></div>
+            </div>
+       
+              <div class="bingo_card3 printMe" id="bingoCard3"> 
+                <img src="img/bingoCARD.jpg" class="card-class" alt="">
+             
+              <div id="id13" class="grid-item"></div>
+              <div id="id37" class="grid-item"></div>
+              <div id="id38" class="grid-item"></div>
+              <div id="id39" class="grid-item"></div>
+              <div id="id40" class="grid-item"></div>
+              <div id="id41" class="grid-item"></div>
+              <div id="id42" class="grid-item"></div>
+              <div id="id43" class="grid-item"></div>
+              <div id="id44" class="grid-item"></div>
+              <div id="id45" class="grid-item"></div>
+              <div id="id46" class="grid-item"></div>
+              <div id="id47" class="grid-item"></div>
+              <div id="id48" class="grid-item"></div>
+            </div>
+          
+  
+            <div class="bingo_card4 printMe" id="bingoCard4">     
+              <img src="img/bingoCARD.jpg" class="card-class" alt="">
+       
+              <div id="id49" class="grid-item"></div>
+              <div id="id50" class="grid-item"></div>
+              <div id="id51" class="grid-item"></div>
+              <div id="id52" class="grid-item"></div>
+              <div id="id53" class="grid-item"></div>
+              <div id="id54" class="grid-item"></div>
+              <div id="id55" class="grid-item"></div>
+              <div id="id56" class="grid-item"></div>
+              <div id="id57" class="grid-item"></div>
+              <div id="id58" class="grid-item"></div>
+              <div id="id59" class="grid-item"></div>
+              <div id="id60" class="grid-item"></div>
+            </div>
+            <div class="bingo_card5 printMe" id="bingoCard5">  
+              <img src="img/bingoCARD.jpg" class="card-class" alt="">
+            
+              <div id="id61" class="grid-item"></div>
+              <div id="id62" class="grid-item"></div>
+              <div id="id63" class="grid-item"></div>
+              <div id="id64" class="grid-item"></div>
+              <div id="id65" class="grid-item"></div>
+              <div id="id66" class="grid-item"></div>
+              <div id="id67" class="grid-item"></div>
+              <div id="id68" class="grid-item"></div>
+              <div id="id69" class="grid-item"></div>
+              <div id="id70" class="grid-item"></div>
+              <div id="id71" class="grid-item"></div>
+              <div id="id72" class="grid-item"></div>
+            </div>
+     </div>
+  
 
   
 
@@ -115,8 +200,8 @@
               <figcaption>Halloween Hangman</figcaption>
           </div>
           <div class="links__images-1 figure">
-            <a href="bingo-halloween.html">
-            <img src="img/HalloweenBingoCard.jpg" alt=""></a>
+            <a href="matching-halloween.html">
+            <img src="img/HalloweenMatching.jpg" alt=""></a>
               <figcaption>Halloween Bingo with Printable Cards</figcaption>
           </div>
       </div>
@@ -129,7 +214,7 @@
       <div class="footer__copyright" id="footer">
         <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
         <p>Vectors & images
-    by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a> & <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>&nbsp <a href="halloween-hangman.html">  Full credits here.</a> Thanks,guys!</p>
+    by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a> & <a href="flaticon-credits2.html" title="Freepik">Flaticon/Freepik</a>&nbsp <a href="halloween-hangman-credits.html">  Further credits here.</a> Thanks,guys!</p>
   </div>
     </footer>
 
@@ -144,8 +229,39 @@
         }
       }
     preload(
- 
- 
+      "img/bat.svg",
+  "img/bone.svg",
+  "img/broomstick.svg",
+  "img/candles.svg",
+  "img/candy.svg",
+  "img/cat.svg",
+  "img/cauldron.svg",
+  "img/clown.svg",
+  "img/coffin.svg",
+  "img/death.svg",
+  "img/fancy-dress.svg",
+  "img/fangs.svg",
+  "img/frankenstein.svg",
+  "img/ghost.svg",
+  "img/grave.svg",
+  "img/halloween-bg.jpg",
+  "img/halloween.svg",
+  "img/hat.svg",
+  "img/monster.svg",
+  "img/moon.svg",
+  "img/mummy.svg",
+  "img/pirate.svg",
+  "img/pumpkin.svg",
+  "img/skeleton.svg",
+  "img/skull.svg",
+  "img/spell.svg",
+  "img/spider.svg",
+  "img/vampire.svg",
+  "img/wand.svg",
+  "img/web.svg",
+  "img/witch.svg",
+  "img/wizard.svg",
+  "img/zombie.svg",
     )
       //--><!]]>
     </script>
